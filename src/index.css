@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: auto;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 #0b0f19;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 999px;
+}
+
+@layer components {
+  section[id] {
+    scroll-margin-top: 110px;
+  }
+
+  .glass {
+    @apply bg-card/75 backdrop-blur-2xl border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)];
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-primary/35 hover:shadow-[0_24px_80px_rgba(0,0,0,0.36),0_0_34px_rgba(16,185,129,0.12)];
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/[0.06] px-3.5 py-1.5 text-xs font-medium tracking-wide text-secondary shadow-[0_0_24px_rgba(16,185,129,0.08)];
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_8px_2px_rgba(52,211,153,0.5)];
+  }
+
+  .heading-xl {
+    @apply font-heading font-bold text-5xl sm:text-6xl lg:text-[4.5rem] leading-[1.02] tracking-normal;
+  }
+
+  .heading-lg {
+    @apply font-heading font-semibold text-3xl sm:text-4xl tracking-normal;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-grad-primary;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium text-sm bg-grad-primary text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_42px_rgba(16,185,129,0.28),0_0_44px_rgba(52,211,153,0.22)] active:scale-[0.97];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium text-sm border border-white/15 text-ink bg-white/[0.02] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/[0.07] hover:border-primary/35 hover:shadow-[0_12px_34px_rgba(16,185,129,0.12)] active:scale-[0.97];
+  }
+}
+
+/* Fixed grain overlay for premium texture depth */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
