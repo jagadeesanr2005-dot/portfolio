@@ -47,7 +47,7 @@ const groupConfig = {
     layout: "special",
     description: "Actively expanding my backend and software engineering skills.",
   },
-};
+} as const;
 
 type GroupTitle = keyof typeof groupConfig;
 
