@@ -94,20 +94,21 @@ function BrowserMock({
       <div
   className={`relative overflow-hidden bg-[#151B26] ${
     project.id === "whatsapp-bulk-sender"
-      ? "h-[560px]"
+      ? "h-[165px] sm:h-[560px]"
       : project.id === "story-generator"
-      ? "h-[230px]"
-      : "h-[230px]"
+      ? "h-[165px] sm:h-[230px]"
+      : "h-[165px] sm:h-[230px]"
   }`}
 >
         {showVideo ? (
 
   <video
-    className="absolute inset-0 w-full h-full object-contain bg-black"
-    controls
-    autoPlay
-    muted
-  >
+  className="absolute inset-0 w-full h-full object-contain bg-black"
+  controls
+  muted
+  playsInline
+  preload="metadata"
+>
     <source src={project.demoVideo} type="video/mp4" />
   </video>
 
@@ -118,7 +119,7 @@ function BrowserMock({
       key={current}
       src={images[current]}
       alt={project.title}
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-contain sm:object-cover bg-[#151B26]"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -253,7 +254,7 @@ export function ProjectCard({ project }: { project: ProjectItem }) {
           </div>
         )}
 
-        <div className="flex gap-3 mt-6">
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
   {project.githubUrl && (
     <Button
       as="a"
