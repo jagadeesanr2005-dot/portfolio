@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Download, Mail, FolderGit2, ArrowDown, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
-const roles = ["Full Stack Developer", "Software Developer", "Desktop Application Developer"];
+const roles = ["Full Stack Developer", "Angular Developer", "Desktop Application Developer"];
 
 function useTypewriter(words: string[], typingSpeed = 70, pauseMs = 1400) {
   const [text, setText] = useState("");
@@ -86,7 +86,7 @@ export function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center overflow-hidden pt-24 pb-16"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-base/60" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30" />
 
       <div className="section-container grid items-center gap-10 md:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         <div className="order-2 text-center sm:text-left lg:order-1">
@@ -96,7 +96,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mb-6"
           >
-            <span className="eyebrow">Jagadeesan R · Portfolio 2024</span>
+            <span className="eyebrow">Jagadeesan R | Full Stack Developer</span>
           </motion.div>
 
           <motion.h1
@@ -105,8 +105,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="heading-xl"
           >
-            Digital Craftsman, <br />
-            Building Experiences.
+            Turning Ideas <br />
+            Into Software.
           </motion.h1>
 
           <motion.div
@@ -130,9 +130,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400"
           >
-            I build elegant and efficient software solutions, from sleek web interfaces to robust
-            desktop applications. I focus on clean architecture and pixel-perfect design to create
-            products that are a joy to use.
+            I'm a Full Stack Developer specializing in Angular, Electron, Node.js, and TypeScript. I build responsive web applications and desktop software with a focus on clean architecture, performance, and user experience.
           </motion.p>
 
           <motion.div
