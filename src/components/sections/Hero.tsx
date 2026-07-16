@@ -146,7 +146,7 @@ export function Hero() {
               <Download size={18} /> Download Resume
             </Button>
             <Button variant="ghost" onClick={() => scrollTo("contact")}>
-              <Mail size={18} /> Contact Me
+              <Mail size={18} /> Get in Touch
             </Button>
           </motion.div>
         </div>
