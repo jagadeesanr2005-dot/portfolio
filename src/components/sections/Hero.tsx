@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Mail, FolderGit2, ArrowDown, UserRound } from "lucide-react";
+import { Download, Mail, FolderGit2, ArrowDown, } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const roles = ["Full Stack Developer", "Angular Developer", "Desktop Application Developer"];
