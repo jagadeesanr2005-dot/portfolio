@@ -11,7 +11,7 @@ const paragraphs = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-24 lg:py-28">
+    <section id="about" className="py-12 sm:py-16 lg:py-8">
       <div className="section-container">
         <SectionHeading eyebrow="About Me" title="Building things that work" />
 

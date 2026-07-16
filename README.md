@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jagadeesan R — Portfolio
 
 A premium, dark-themed developer portfolio built with React 19, Vite, TypeScript,
@@ -61,3 +62,7 @@ src/
   lib/          skillIcons map
   types/        Shared TypeScript interfaces
 ```
+=======
+# portfolio
+My personal developer portfolio built with React, Vite, TypeScript, Tailwind CSS, and Framer Motion, showcasing my projects, skills, and experience.
+>>>>>>> 913865e8070c85d3e702f314fb092cb26e22647e

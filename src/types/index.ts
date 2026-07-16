@@ -18,7 +18,11 @@ export interface ProjectItem {
   id: string;
   title: string;
   description: string;
-  image: string;
+
+  image?: string;
+  images?: string[];
+  demoVideo?: string; 
+
   tech: string[];
   features: string[];
   githubUrl?: string;

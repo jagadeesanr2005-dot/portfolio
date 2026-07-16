@@ -6,7 +6,13 @@ export const projects: ProjectItem[] = [
     title: "WhatsApp Bulk Sender",
     description:
       "A desktop application that enables users to send personalized WhatsApp messages in bulk using Excel files with QR authentication.",
-    image: "/projects/whatsapp-bulk-sender.png",
+    images: [
+  "/images/my-screenshots/whatsapp-1.png",
+  "/images/my-screenshots/whatsapp-2.png",
+  "/images/my-screenshots/whatsapp-3.png",
+  "/images/my-screenshots/whatsapp-4.png",
+],
+    demoVideo: "/videos/whatsapp-bulk-sender-demo.mp4",
     tech: ["Angular", "Electron", "Node.js", "TypeScript"],
     features: [
       "QR Authentication",
@@ -23,7 +29,12 @@ export const projects: ProjectItem[] = [
     title: "Story Generator",
     description:
       "An AI-flavored procedural story engine with a polished, animated web interface for generating short stories across many genres.",
-    image: "/projects/story-generator.png",
+   images: [
+  "/images/my-screenshots/whatsapp-1.png",
+  "/images/my-screenshots/whatsapp-2.png",
+  "/images/my-screenshots/whatsapp-3.png",
+],
+    demoVideo: "/videos/story-generator-demo.mp4",
     tech: ["Python", "HTML", "CSS", "TypeScript"],
     features: [
       "Story Generation",
@@ -39,7 +50,12 @@ export const projects: ProjectItem[] = [
     title: "Desktop Scanner",
     description:
       "A desktop document scanning application with a full frontend interface and backend API integration for document management.",
-    image: "/projects/desktop-scanner.png",
+   images: [
+  "/images/my-screenshots/whatsapp-1.png",
+  "/images/my-screenshots/whatsapp-2.png",
+  "/images/my-screenshots/whatsapp-3.png",
+],
+    demoVideo: "/videos/desktop-scanner-demo.mp4",
     tech: [
     "Angular",
     "Electron",

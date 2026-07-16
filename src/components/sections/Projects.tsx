@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-24 lg:py-28">
+    <section id="projects" className="py-12 sm:py-24 lg:py-12">
       <div className="section-container">
         <SectionHeading
           eyebrow="Projects"

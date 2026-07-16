@@ -54,7 +54,7 @@ export function GithubStats() {
   }, []);
 
   return (
-    <section id="github" className="py-20 sm:py-24 lg:py-28">
+    <section id="github" className="py-12 sm:py-24 lg:py-12">
       <div className="section-container">
 
         <SectionHeading

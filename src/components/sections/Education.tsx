@@ -11,7 +11,7 @@ import {
 
 export function Education() {
   return (
-    <section id="education" className="py-20 sm:py-24 lg:py-28">
+    <section id="education" className="py-12 sm:py-24 lg:py-12">
       <div className="section-container">
         <SectionHeading
           eyebrow="Education"

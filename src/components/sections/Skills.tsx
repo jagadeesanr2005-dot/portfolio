@@ -53,7 +53,7 @@ type GroupTitle = keyof typeof groupConfig;
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 sm:py-24 lg:py-28">
+    <section id="skills" className="py-12 sm:py-24 lg:py-12">
       <div className="section-container">
         <SectionHeading eyebrow="Skills" title="My Technical Toolkit" />
 
@@ -103,7 +103,7 @@ export function Skills() {
                   </div>
                 )}
                 {config.layout === "center" && (
-                  <div className="flex justify-center">
+                  <div className="flex justify-left">
                     {group.items.map((item) => (
                       <SkillCard key={item.name} {...item} variant={config.variant} />
                     ))}

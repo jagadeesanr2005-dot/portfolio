@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 export function Resume() {
   return (
-    <section id="resume" className="py-20 sm:py-24 lg:py-28">
+    <section id="resume" className="py-12 sm:py-24 lg:py-12">
       <div className="section-container">
         <SectionHeading
           eyebrow="Resume"
